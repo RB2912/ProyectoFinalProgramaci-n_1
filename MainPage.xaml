@@ -1,0 +1,54 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinalProgramación_1.MainPage"
+             xmlns:local="clr-namespace:ProyectoFinalProgramación_1"
+             BackgroundColor="AliceBlue">
+
+    <StackLayout Spacing="20" Padding="20">
+        <Label Text="Sedan" FontSize="24" TextColor="Blue" HorizontalOptions="Center" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Acelerar" Clicked="SedanAccelerateBtn_Clicked" BackgroundColor="Green" TextColor="White" />
+            <Button Text="Frenar" Clicked="SedanBrakeBtn_Clicked" BackgroundColor="Red" TextColor="White" />
+            <Button Text="Encender" Clicked="SedanTurnOnBtn_Clicked" BackgroundColor="Orange" TextColor="White" />
+            <Button Text="Apagar" Clicked="SedanTurnOffBtn_Clicked" BackgroundColor="Gray" TextColor="White" />
+        </StackLayout>
+
+        <Label x:Name="SedanSpeedLabel" Text="Current Speed: 0 km/h" FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+
+        <Label Text="SUV" FontSize="24" TextColor="Blue" HorizontalOptions="Center" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Acelerar" Clicked="SUVAccelerateBtn_Clicked" BackgroundColor="Green" TextColor="White" />
+            <Button Text="Frenar" Clicked="SUVBrakeBtn_Clicked" BackgroundColor="Red" TextColor="White" />
+            <Button Text="Encender" Clicked="SUVTurnOnBtn_Clicked" BackgroundColor="Orange" TextColor="White" />
+            <Button Text="Apagar" Clicked="SUVTurnOffBtn_Clicked" BackgroundColor="Gray" TextColor="White" />
+        </StackLayout>
+
+        <Label x:Name="SUVSpeedLabel" Text="Current Speed: 0 km/h" FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+
+        <Label Text="4x4" FontSize="24" TextColor="Blue" HorizontalOptions="Center" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            
+            <Button Text="Acelerar" Clicked="_4x4AccelerateBtn_Clicked" BackgroundColor="Green" TextColor="White" />
+            <Button Text="Frenar" Clicked="_4x4BrakeBtn_Clicked" BackgroundColor="Red" TextColor="White" />
+            <Button Text="Encender" Clicked="_4x4TurnOnBtn_Clicked" BackgroundColor="Orange" TextColor="White" />
+            <Button Text="Apagar" Clicked="_4x4TurnOffBtn_Clicked" BackgroundColor="Gray" TextColor="White" />
+        </StackLayout>
+
+        <Label x:Name="_4x4SpeedLabel" Text="Current Speed: 0 km/h" FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+
+        <Label Text="PickUp" FontSize="24" TextColor="Blue" HorizontalOptions="Center" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Acelerar" Clicked="PickUpAccelerateBtn_Clicked" BackgroundColor="Green" TextColor="White" />
+            <Button Text="Frenar" Clicked="PickUpBrakeBtn_Clicked" BackgroundColor="Red" TextColor="White" />
+            <Button Text="Encender" Clicked="PickUpTurnOnBtn_Clicked" BackgroundColor="Orange" TextColor="White" />
+            <Button Text="Apagar" Clicked="PickUpTurnOffBtn_Clicked" BackgroundColor="Gray" TextColor="White" />
+        </StackLayout>
+
+        <Label x:Name="PickUpSpeedLabel" Text="Current Speed: 0 km/h" FontSize="18" TextColor="Black" HorizontalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>
